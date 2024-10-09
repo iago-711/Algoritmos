@@ -24,14 +24,22 @@ function exibirMenu(){
             console.log("Adicionar Frutas")
             let adicionar =  prompt("adicionar Fruta: ")
             listafrutas.push(adicionar);
+            console.log("vc adicionou: " + adicionar)
+            
                 console.log(listafrutas)
             break;
 
         case '2':
             
         let deletar = prompt("qual fruta voce quer deletar?")
-            let index = listafrutas.indexOf(deletar); 
-            listafrutas.splice(index, 1)
+        let index = listafrutas.indexOf(deletar) 
+        if (index !== -1) {
+            listafrutas.splice(index,1)
+            console.log ("fruta",  deletar , "deletada")
+        }else{ 
+            console.log (deletar, "nao esta na lista")
+    
+        }
 
             break;
         case '3':
