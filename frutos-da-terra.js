@@ -35,9 +35,12 @@ function exibirMenu(){
         let index = listafrutas.indexOf(deletar) 
         if (index !== -1) {
             listafrutas.splice(index,1)
+            console.log()
             console.log ("fruta",  deletar , "deletada")
+            console.log()
         }else{ 
             console.log (deletar, "nao esta na lista")
+            
     
         }
 
