@@ -37,3 +37,4 @@ for(let i = 0; i < 10; i++){
 // Exibir a matriz no console
 console.log(paises);
 console.log("o pais com maior populacao é:", pais , maiorPopulacao )
+console.table(paises)
