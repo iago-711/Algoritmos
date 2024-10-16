@@ -14,27 +14,37 @@ const paises = [
 let maiorPopulacao = 0
 let pais = 0
 
-for(let i = 0; i < 10; i++){
-        
+for(let i = 0; i < 10; i++){    
     for(let j = 0; j < 2; j++){
        if(paises[i][1]> maiorPopulacao){
 
         maiorPopulacao = paises[i][1];
         pais = paises[i][0]
        }
-        
-        
-
-
-       console.log(paises[i][j])
-       
-
-    
+         console.log(paises[i][j])
+   
     }
-}
+}    
+
+let menorPopulacao = 1000000000000
+let menorPais = ''
+
+for(let i = 0; i < 10; i++){    
+    for(let j = 0; j < 2; j++){
+       if(paises[i][1]< menorPopulacao){
+
+        menorPopulacao = paises[i][1];
+        menorPais = paises[i][0]
+       }
+         console.log(paises[i][j])
+   
+    }
+}    
+    
 
 
 // Exibir a matriz no console
 console.log(paises);
 console.log("o pais com maior populacao é:", pais , maiorPopulacao )
-console.table(paises)
+console.log("o pais com a menor populacao é:", menorPais , menorPopulacao )
+
