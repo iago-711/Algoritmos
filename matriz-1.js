@@ -60,14 +60,18 @@ function exibirMenu(){
             break;
 
         case '2':
-            inserirPais();
+        let a =  prompt("Qual pais vc quer inserir: ")
+        let b = parseInt(prompt("Qual e o tamanho da populacao"))
+            inserirPais(a,b);
             break;
 
         case '3':
+            prompt (" Qual pais vc quer deletar: ")
             deletarPais();
             break;
         
         case '4':
+            prompt(" Qual pais vc quer encontrar: ")
             encontrarPais();
             break;
 
