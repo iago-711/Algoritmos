@@ -34,12 +34,14 @@ function LocalizarProduto(codigo){
     for(let i = 0; i < tabela.length; i++){
         if(tabela [i].codigo == (codigo)){
             retorno = "codigo: " + tabela[i].codigo + " - produto: " +tabela[i].produto + " Cor: " +tabela[i].cor + " Tamanho " + tabela[i].tamanho + " Quantidade " + tabela[i].quantidade + " Valor " + tabela[i].valor
-        }
-        else{
-
-        }
+       return retorno
+       
+        } 
+        
     } 
-    return retorno
+    retorno = "Codigo não Encontrado."
+      return retorno
+    
 
 }
 
